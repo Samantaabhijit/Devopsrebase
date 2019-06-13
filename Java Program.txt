@@ -1,0 +1,100 @@
+class CharArrayToString
+{
+   public static void main(String args[])
+   {
+      // Method 1: Using String object
+      char[] ch = {'g', 'o', 'o', 'd', ' ', 'm', 'o', 'r', 'n', 'i', 'n', 'g'};
+      String str = new String(ch);
+      System.out.println(str);
+ 
+      // Method 2: Using valueOf method
+      String str2 = String.valueOf(ch);
+      System.out.println(str2);
+   }
+}
+
+//Java Program to create and call a default constructor
+class Bike1{
+//creating a default constructor
+Bike1(){System.out.println("Bike is created");}
+//main method
+public static void main(String args[]){
+//calling a default constructor
+Bike1 b=new Bike1();
+}
+}
+class Student18 implements Cloneable{  
+int rollno;  
+String name;  
+  
+Student18(int rollno,String name){  
+this.rollno=rollno;  
+this.name=name;  
+}  
+  
+public Object clone()throws CloneNotSupportedException{  
+return super.clone();  
+}  
+  
+public static void main(String args[]){  
+try{  
+Student18 s1=new Student18(101,"amit");  
+  
+Student18 s2=(Student18)s1.clone();  
+  
+System.out.println(s1.rollno+" "+s1.name);  
+System.out.println(s2.rollno+" "+s2.name);  
+  
+}catch(CloneNotSupportedException c){}  
+  
+}  
+} 
+//First.java  
+import java.applet.Applet;  
+import java.awt.Graphics;  
+public class First extends Applet{  
+  
+public void paint(Graphics g){  
+g.drawString("welcome",150,150);  
+}  
+  
+} 
+import javax.swing.*;
+public class FirstSwingExample {
+public static void main(String[] args) {
+JFrame f=new JFrame();//creating instance of JFrame
+
+JButton b=new JButton("click");//creating instance of JButton
+b.setBounds(130,100,100, 40);//x axis, y axis, width, height
+
+f.add(b);//adding button in JFrame
+
+f.setSize(400,500);//400 width and 500 height
+f.setLayout(null);//using no layout managers
+f.setVisible(true);//making the frame visible
+}
+}
+import java.awt.*;  
+class First extends Frame{  
+First(){  
+Button b=new Button("click me");  
+b.setBounds(30,100,80,30);// setting button position  
+add(b);//adding button into frame  
+setSize(300,300);//frame size 300 width and 300 height  
+setLayout(null);//no layout manager  
+setVisible(true);//now frame will be visible, by default not visible  
+}  
+public static void main(String args[]){  
+First f=new First();  
+}}
+
+public class StringExample{
+public static void main(String args[]){
+String s1="java";//creating string by java string literal
+char ch[]={'s','t','r','i','n','g','s'};
+String s2=new String(ch);//converting char array to string
+String s3=new String("example");//creating java string by new keyword
+System.out.println(s1);
+System.out.println(s2);
+System.out.println(s3);
+}}
